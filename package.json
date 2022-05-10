@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@fancyapps/ui": "^4.0.26",
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.27.9",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
@@ -19,6 +19,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0",
+    "rateyo": "^2.3.2",
     "sass": "^1.50.0",
     "slick-carousel": "^1.8.1"
   }
