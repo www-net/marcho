@@ -529,10 +529,10 @@
         position: relative;
         height: 370px;
         margin-bottom: 25px;
-        
+
         overflow: hidden;
     }
-    
+
     &__images {
         object-fit: cover;
     }
@@ -561,30 +561,30 @@
     &__link {
         position: relative;
         display: flex;
-        
+
         path {
             transition: all .3s;
         }
     }
-    
+
     &__link:hover {
         path {
             fill: $accent;
         }
     }
-    
+
     &__link--line::before,
     &__link--line::after {
         content: '';
 
         position: absolute;
         top: 0;
-        
+
         width: 1px;
         height: 30px;
         background-color: #ececec;
     }
-    
+
     &__link--line::before {
         left: -25px;
     }
@@ -592,7 +592,7 @@
     &__link--line::after {
         right: -25px;
     }
-    
+
     &:hover {
         .product-item__link-box {
             transform: translateY(0);
@@ -603,14 +603,14 @@
         padding: 15px 0 20px;
         color: $title;
     }
-    
+
     &__price {
         display: flex;
         justify-content: center;
-        
+
         @extend %roboto-400;
     }
-    
+
     &__new-price {
         padding: 0 12px;
     }
@@ -628,7 +628,7 @@
             position: absolute;
             top: 25px;
             left: 25px;
-            
+
             @extend %btn;
             line-height: 1;
 
@@ -678,14 +678,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
         width: 120px;
         height: 120px;
-        
+
         text-align: center;
 
         border-radius: 50%;
         background-color: #fff;
+        box-shadow: 0px 10px 40px 0px rgba(187, 187, 187, 0.3);
+
 
         span {
             @extend %roboto-700;
@@ -694,10 +696,6 @@
             font-size: 48px;
             color: $title;
         }
-    }
-
-    &__text {
-
     }
 
     &__link {
@@ -709,11 +707,12 @@
         color: $title;
 
         border: 1px solid $accent;
-        }
     }
+}
 
 .partners {
     padding-top: 75px;
+
     &__list {
         display: flex;
         justify-content: space-between;
@@ -721,5 +720,140 @@
         height: 170px;
     }
 }
+
+
+.blog {
+    padding-top: 50px;
+
+    background-image: url('../images/blog-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &__items {
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+
+        &::after {
+            content: '';
+
+            position: absolute;
+            top: -25px;
+            right: -20px;
+            z-index: -1;
+
+            width: 126px;
+            height: 53px;
+
+            background-image: url('../images/decor/blog-decor.svg');
+        }
+    }
+
+    &__item {
+        max-width: 370px;
+
+        border: 1px solid #ececec;
+        transition: all .3s;
+
+        &:hover {
+            border: none;
+            box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
+
+            .blog__item-link {
+                color: $accent;
+
+                &::after {
+                    background-image: url('../images/icons/arrow-accent.svg ');
+                }
+            }
+        }
+    }
+
+    &__item-imglink {
+        display: block;
+
+        img {
+            height: 288px;
+            object-fit: cover;
+        }
+    }
+
+    &__item-box {
+        padding: 30px 40px;
+    }
+
+    &__item-info {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 20px;
+    }
+
+    &__item-author,
+    &__item-date {
+        position: relative;
+
+        padding-left: 30px;
+
+        &::before {
+            content: '';
+
+            position: absolute;
+            top: 4px;
+            left: 0;
+
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__item-author::before {
+        background-image: url('../images/icons/user-grey.svg')
+    }
+
+    &__item-date::before {
+        background-image: url('../images/icons/time.svg')
+    }
+
+    &__item-title {
+        @extend %roboto-400;
+        margin-bottom: 20px;
+
+        font-size: 22px;
+        color: $title;
+    }
+
+    &__item-link {
+        position: relative;
+        transition: all .3s;
+    }
+
+    &__item-link::after {
+        content: '';
+
+        position: absolute;
+        top: 8px;
+        right: -14px;
+
+        width: 10px;
+        height: 8px;
+
+        background-image: url('../images/icons/arrow.svg')
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import 'media';
