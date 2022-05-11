@@ -47,3 +47,62 @@ a {
     text-transform: uppercase;
     text-align: center;
 }
+
+.breadcrumbs {
+    position: relative;
+    
+    display: inline-flex;
+    justify-content: center;
+    padding-left: 25px;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 4px;
+        left: 0;
+
+        width: 16px;
+        height: 16px;
+
+        background-image: url('../images/icons/home-icon.svg ');
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        position: relative;
+        
+        padding-right: 40px;
+
+        color: #727272;
+
+        &::after {
+            content: '';
+
+            position: absolute;
+            top: 9px;
+            right: 15px;
+
+            width: 9px;
+            height: 10px;
+
+            background-image: url('../images/icons/angle-right.svg');
+        }
+
+        &:last-child {
+            padding-right: 0;
+
+            color: $accent;
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    &__link {
+        color: inherit;
+    }
+}
