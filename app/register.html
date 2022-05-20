@@ -57,29 +57,61 @@
     </header>
 
 
-<main class="main">
-    
-    <section class="top">
-        <div class="top__container" style="background-image: url('images/top-bg.jpg');">
-            <div class="container">
-                <h2 class="top__title title">Log in</h2>
-                <div class="breadcrumbs">
-                    <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item">
-                            <a class="breadcrumbs__link" href="#">Home</a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <span class="breadcrumbs__link" href="#">Log in</span>
-                        </li>
-                    </ul>
+    <main class="main">
+
+        <section class="top">
+            <div class="top__container" style="background-image: url('images/top-bg.jpg');">
+                <div class="container">
+                    <h2 class="top__title title">Register</h2>
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Home</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__link" href="#">Register</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-</main>
+        <section class="modal">
+
+            <div class="modal__links">
+                <a class="modal__link" href="#">Register</a>
+                <span class="modal__link modal__link--active" href="#">Login</span>
+            </div>
+            <form class="modal__form" action="#">
+                <label class="modal__label">
+                    Username or email address*
+                    <input class="modal__input" type="text" required>
+                </label>
+                <label class="modal__label">
+                    Password*
+                    <input class="modal__input" type="password" required>
+                </label>
+                <p class="modal__text">
+                    A password will be sent to your email address.
+                </p>
+                <p class="modal__text">
+                    Your personal data will be used to support your experience throughout this website, to manage access
+                    to your account, and for other purposes described in our privacy policy.
+                </p>
+                <label class="modal__label">
+                    <input type="checkbox" name="" id="">
+                    Agree with Terms & Conditions
+                </label>
+                <button class="modal__btn" type="submit">Register</button>
+            </form>
+
+        </section>
 
 
+
+
+    </main>
 
     <footer class="footer">
         <div class="container">
@@ -97,42 +129,52 @@
                     <ul class="footer-top__social-list">
                         <li class="footer-top__social-item">
                             <a class="footer-top__social-link" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="18px" viewBox="0 0 17 17" version="1.1">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="17px" height="18px" viewBox="0 0 17 17" version="1.1">
                                     <g>
-                                        <path d="M 17 8.691406 C 17 13.390625 13.625 16.734375 8.640625 16.734375 C 3.859375 16.734375 0 13.054688 0 8.5 C 0 3.945312 3.859375 0.265625 8.640625 0.265625 C 10.964844 0.265625 12.925781 1.078125 14.433594 2.421875 L 12.082031 4.574219 C 9.003906 1.746094 3.285156 3.871094 3.285156 8.5 C 3.285156 11.371094 5.691406 13.699219 8.640625 13.699219 C 12.058594 13.699219 13.34375 11.363281 13.542969 10.148438 L 8.640625 10.148438 L 8.640625 7.316406 L 16.863281 7.316406 C 16.945312 7.738281 17 8.144531 17 8.691406 Z M 17 8.691406 " />
+                                        <path
+                                            d="M 17 8.691406 C 17 13.390625 13.625 16.734375 8.640625 16.734375 C 3.859375 16.734375 0 13.054688 0 8.5 C 0 3.945312 3.859375 0.265625 8.640625 0.265625 C 10.964844 0.265625 12.925781 1.078125 14.433594 2.421875 L 12.082031 4.574219 C 9.003906 1.746094 3.285156 3.871094 3.285156 8.5 C 3.285156 11.371094 5.691406 13.699219 8.640625 13.699219 C 12.058594 13.699219 13.34375 11.363281 13.542969 10.148438 L 8.640625 10.148438 L 8.640625 7.316406 L 16.863281 7.316406 C 16.945312 7.738281 17 8.144531 17 8.691406 Z M 17 8.691406 " />
                                     </g>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-top__social-item">
                             <a class="footer-top__social-link" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="18px" viewBox="0 0 17 17" version="1.1">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="17px" height="18px" viewBox="0 0 17 17" version="1.1">
                                     <g>
-                                        <path d="M 17 8.691406 C 17 13.390625 13.625 16.734375 8.640625 16.734375 C 3.859375 16.734375 0 13.054688 0 8.5 C 0 3.945312 3.859375 0.265625 8.640625 0.265625 C 10.964844 0.265625 12.925781 1.078125 14.433594 2.421875 L 12.082031 4.574219 C 9.003906 1.746094 3.285156 3.871094 3.285156 8.5 C 3.285156 11.371094 5.691406 13.699219 8.640625 13.699219 C 12.058594 13.699219 13.34375 11.363281 13.542969 10.148438 L 8.640625 10.148438 L 8.640625 7.316406 L 16.863281 7.316406 C 16.945312 7.738281 17 8.144531 17 8.691406 Z M 17 8.691406 " />
+                                        <path
+                                            d="M 17 8.691406 C 17 13.390625 13.625 16.734375 8.640625 16.734375 C 3.859375 16.734375 0 13.054688 0 8.5 C 0 3.945312 3.859375 0.265625 8.640625 0.265625 C 10.964844 0.265625 12.925781 1.078125 14.433594 2.421875 L 12.082031 4.574219 C 9.003906 1.746094 3.285156 3.871094 3.285156 8.5 C 3.285156 11.371094 5.691406 13.699219 8.640625 13.699219 C 12.058594 13.699219 13.34375 11.363281 13.542969 10.148438 L 8.640625 10.148438 L 8.640625 7.316406 L 16.863281 7.316406 C 16.945312 7.738281 17 8.144531 17 8.691406 Z M 17 8.691406 " />
                                     </g>
-                                </svg>                            </a>
+                                </svg> </a>
                         </li>
                         <li class="footer-top__social-item">
                             <a class="footer-top__social-link" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="18px" viewBox="0 0 17 17" version="1.1">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="17px" height="18px" viewBox="0 0 17 17" version="1.1">
                                     <g>
-                                        <path d="M 17 8.691406 C 17 13.390625 13.625 16.734375 8.640625 16.734375 C 3.859375 16.734375 0 13.054688 0 8.5 C 0 3.945312 3.859375 0.265625 8.640625 0.265625 C 10.964844 0.265625 12.925781 1.078125 14.433594 2.421875 L 12.082031 4.574219 C 9.003906 1.746094 3.285156 3.871094 3.285156 8.5 C 3.285156 11.371094 5.691406 13.699219 8.640625 13.699219 C 12.058594 13.699219 13.34375 11.363281 13.542969 10.148438 L 8.640625 10.148438 L 8.640625 7.316406 L 16.863281 7.316406 C 16.945312 7.738281 17 8.144531 17 8.691406 Z M 17 8.691406 " />
+                                        <path
+                                            d="M 17 8.691406 C 17 13.390625 13.625 16.734375 8.640625 16.734375 C 3.859375 16.734375 0 13.054688 0 8.5 C 0 3.945312 3.859375 0.265625 8.640625 0.265625 C 10.964844 0.265625 12.925781 1.078125 14.433594 2.421875 L 12.082031 4.574219 C 9.003906 1.746094 3.285156 3.871094 3.285156 8.5 C 3.285156 11.371094 5.691406 13.699219 8.640625 13.699219 C 12.058594 13.699219 13.34375 11.363281 13.542969 10.148438 L 8.640625 10.148438 L 8.640625 7.316406 L 16.863281 7.316406 C 16.945312 7.738281 17 8.144531 17 8.691406 Z M 17 8.691406 " />
                                     </g>
-                                </svg>                            </a>
+                                </svg> </a>
                         </li>
                         <li class="footer-top__social-item">
                             <a class="footer-top__social-link" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="18px" viewBox="0 0 17 17" version="1.1">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="17px" height="18px" viewBox="0 0 17 17" version="1.1">
                                     <g>
-                                        <path d="M 17 8.691406 C 17 13.390625 13.625 16.734375 8.640625 16.734375 C 3.859375 16.734375 0 13.054688 0 8.5 C 0 3.945312 3.859375 0.265625 8.640625 0.265625 C 10.964844 0.265625 12.925781 1.078125 14.433594 2.421875 L 12.082031 4.574219 C 9.003906 1.746094 3.285156 3.871094 3.285156 8.5 C 3.285156 11.371094 5.691406 13.699219 8.640625 13.699219 C 12.058594 13.699219 13.34375 11.363281 13.542969 10.148438 L 8.640625 10.148438 L 8.640625 7.316406 L 16.863281 7.316406 C 16.945312 7.738281 17 8.144531 17 8.691406 Z M 17 8.691406 " />
+                                        <path
+                                            d="M 17 8.691406 C 17 13.390625 13.625 16.734375 8.640625 16.734375 C 3.859375 16.734375 0 13.054688 0 8.5 C 0 3.945312 3.859375 0.265625 8.640625 0.265625 C 10.964844 0.265625 12.925781 1.078125 14.433594 2.421875 L 12.082031 4.574219 C 9.003906 1.746094 3.285156 3.871094 3.285156 8.5 C 3.285156 11.371094 5.691406 13.699219 8.640625 13.699219 C 12.058594 13.699219 13.34375 11.363281 13.542969 10.148438 L 8.640625 10.148438 L 8.640625 7.316406 L 16.863281 7.316406 C 16.945312 7.738281 17 8.144531 17 8.691406 Z M 17 8.691406 " />
                                     </g>
-                                </svg>                            </a>
+                                </svg> </a>
                         </li>
                         <li class="footer-top__social-item">
                             <a class="footer-top__social-link" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="18px" viewBox="0 0 17 17" version="1.1">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="17px" height="18px" viewBox="0 0 17 17" version="1.1">
                                     <g>
-                                        <path d="M 17 8.691406 C 17 13.390625 13.625 16.734375 8.640625 16.734375 C 3.859375 16.734375 0 13.054688 0 8.5 C 0 3.945312 3.859375 0.265625 8.640625 0.265625 C 10.964844 0.265625 12.925781 1.078125 14.433594 2.421875 L 12.082031 4.574219 C 9.003906 1.746094 3.285156 3.871094 3.285156 8.5 C 3.285156 11.371094 5.691406 13.699219 8.640625 13.699219 C 12.058594 13.699219 13.34375 11.363281 13.542969 10.148438 L 8.640625 10.148438 L 8.640625 7.316406 L 16.863281 7.316406 C 16.945312 7.738281 17 8.144531 17 8.691406 Z M 17 8.691406 " />
+                                        <path
+                                            d="M 17 8.691406 C 17 13.390625 13.625 16.734375 8.640625 16.734375 C 3.859375 16.734375 0 13.054688 0 8.5 C 0 3.945312 3.859375 0.265625 8.640625 0.265625 C 10.964844 0.265625 12.925781 1.078125 14.433594 2.421875 L 12.082031 4.574219 C 9.003906 1.746094 3.285156 3.871094 3.285156 8.5 C 3.285156 11.371094 5.691406 13.699219 8.640625 13.699219 C 12.058594 13.699219 13.34375 11.363281 13.542969 10.148438 L 8.640625 10.148438 L 8.640625 7.316406 L 16.863281 7.316406 C 16.945312 7.738281 17 8.144531 17 8.691406 Z M 17 8.691406 " />
                                     </g>
                                 </svg>
                             </a>
