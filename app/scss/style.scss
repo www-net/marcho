@@ -152,6 +152,10 @@
         color: $title;
     }
 
+    &__form {
+        display: flex;
+    }
+
     &__link {
         display: block;
         margin-bottom: 14px;
@@ -164,6 +168,7 @@
     &__form-input {
         max-width: 320px;
         width: 100%;
+        margin-right: 3px;
         padding: 12px 10px 12px 15px;
 
         border: none;
