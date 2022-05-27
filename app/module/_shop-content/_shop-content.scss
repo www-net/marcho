@@ -1,0 +1,86 @@
+.shop-content {
+    width: 100%;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        border-bottom: 1px solid #ececec;
+
+        .product-item {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__filter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 25px 20px 30px;
+        margin-bottom: 40px;
+
+        border: 1px solid #ececec;
+    }
+
+    &__filter-buttons {
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__filter-btn {
+        padding: 0;
+        margin-left: 15px;
+
+        line-height: 0;
+
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &.shop-content__filter-btn--active {
+            path {
+                fill: $accent;
+            }
+        }
+    }
+}
+
+// select-style
+
+.jq-selectbox__select {
+    height: 32px;
+    margin-left: 30px;
+    padding: 0 30px 0 0;
+
+    @extend %quicksand-500;
+    color: $default;
+    text-shadow: none;
+
+    border: none;
+    background: transparent;
+    box-shadow: none;
+
+    &:hover {
+        background: transparent;
+    }
+}
+
+.jq-selectbox__trigger {
+    border-left: none;
+}
+
+.jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    width: 10px;
+    height: 5px;
+
+    border: none;
+    background-image: url('../images/icons/angle-down.svg');
+}
+
+// ------------

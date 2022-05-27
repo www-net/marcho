@@ -1,0 +1,17 @@
+.top {
+    &__container {
+        max-width: 1700px;
+        margin: 0 auto;
+        padding: 120px 0 130px;
+
+        text-align: center;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+    }
+
+    &__title {
+        text-transform: uppercase;
+    }
+}
