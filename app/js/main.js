@@ -1,5 +1,16 @@
 $(function () {
 
+    $('.menu__btn').on('click', function(){
+        $('.menu__list').toggleClass('menu__list--active');
+    })
+
+//  toggle display to footer at small width
+
+    // $('.footer-top__title').on('click', function() {
+    //     $(this).next().slideToggle();
+    //     $(this).toggleClass('--active');
+    // });
+
 // comments to products
 
     $('.product-tabs__top-item').on('click', function (e) {
