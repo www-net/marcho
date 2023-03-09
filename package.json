@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npm run gh-pages -d app"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +13,7 @@
     "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.27.9",
     "del": "^6.0.0",
+    "gh-pages": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
